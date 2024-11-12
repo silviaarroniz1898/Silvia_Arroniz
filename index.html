@@ -1,0 +1,88 @@
+<!--Esta es la página principal de la web-->
+<!--El head, header y footer son prácticamente iguales en todos los html-->
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <!--Aquí ponemos el nombre que queremos que se vea en la pestaña del buscador-->
+        <title>SWEETS & GREENS</title>
+        <meta name="description" content="dulces elaborados con productos ecologicos">
+        <!--Con el link de abajo hacemos que el logo de nuestra marca aparezca en la pestaña del buscador-->
+        <link rel="icon" href="assets/imagenes/logo.png">
+        <!--Enlazamos con nuestra hoja de estilos, común a todos los html-->
+        <link rel="stylesheet" href="css/estilos.css">
+        <!--Cargamos la fuente que usaremos haciendo uso de las líneas de texto que nos proporciona Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Charm:wght@400;700&family=Lavishly+Yours&family=Lobster&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <!--Con el nav de abajo creamos el menú de navegación que estará en la parte superior de todas las páginas de la web.
+            Obsérvese que cada <div> del <nav> tiene una clase, que será div_barra en todos los casos menos en el
+            del html que nos encontremos que será div_barra2(en este caso INICIO que hace referencia a la página asociada al index.html), 
+            así podemos resaltar la página donde nos encontremos-->
+            <nav>
+                <div class="elemento"> <a href="./index.html" class="div_barra2">INCIO</a></div>
+                <div class="elemento"> <a href="./views/productos.html" class="div_barra">PRODUCTOS</a></div>
+                <div class="elemento"> <a href="./views/contacto.html" class="div_barra">CONTACTO</a></div>
+                <div class="elemento"> <a href="./views/presupuesto.html" class="div_barra">PRESUPUESTOS PARA EVENTOS</a></div>
+            </nav>  
+            <!--Aquí ponemo el título de la web con el logo al lado-->
+            <h1>Sweet & Greens</h1>     
+            <img src="assets/imagenes/logo.png" alt="logotipo" width="40" height="40">
+            <h2>La naturaleza, horneada a la perfección</h2>
+        </header>
+        <main>
+            <!--SECCIÓN 1-->
+            <section class="historia">
+                    <h1>SEMBRANDO SABORES DESDE 1989...</h1>
+                    <p>Sweets & Greens nace de la pasión por la repostería de Enya, quien desde pequeña disfrutaba preparando dulces caseros para su familia y amigos. Con el tiempo, esta afición se convirtió en una verdadera vocación, y decidió compartir su amor por la bollería con el mundo. <br>Tras años de investigación y experimentación, Enya desarrolló un proceso de elaboración artesanal que combina las mejores tradiciones de la repostería con los principios de la agricultura ecológica. Nuestro objetivo es ofrecer productos deliciosos y saludables, elaborados con ingredientes de primera calidad y sin comprometer el sabor.<br>
+                    En Sweets & Greens, creemos que la alimentación es mucho más que un acto nutricional, es una experiencia sensorial y emocional. Por eso, ponemos todo nuestro corazón en cada bollo que elaboramos.</p>
+            </section>
+            <!--SECCIÓN 2-->
+            <section class="apartado1">
+                <div class="texSG">
+                    <h2>Descubre la bollería ecológica sin gluten que cuida de ti</h2>
+                    <p>Imagina disfrutar de un delicioso bizcocho, una crujiente galleta o un esponjoso muffin sin preocuparte por el gluten. Nuestra nueva gama de bollería ecológica, elaborada con ingredientes naturales y sin gluten, te permite cuidar de tu salud sin renunciar al sabor. ¡Perfecta para celíacos, intolerantes al gluten y para todos aquellos que buscan una alimentación más saludable!</p>
+                </div>
+                <div class="imgSG">
+                    <img src="./assets/imagenes/sin-gluten.jpg" alt="bollería sin gluten">
+                </div> 
+            </section>
+            <!--SECCIÓN 3-->
+            <section class="apartado2">   
+                <div class="texNavidad">
+                    <h2>La Navidad sabe mejor con Sweets & Greens</h2>
+                    <p>¡Prepárate para disfrutar de unas fiestas llenas de sabor y conciencia! Nuestra nueva colección de dulces navideños ecológicos te sorprenderá con sus irresistibles sabores y texturas. Elaborados con ingredientes de primera calidad y sin aditivos artificiales, son la opción perfecta para compartir momentos especiales en familia y amigos.</p>
+                    <p>Además,este año como novedad contamos con:</p>
+                      <ul class="novedades">
+                            <li>Casitas de galleta de jengibre y canela</li>
+                            <li>Tarta de turrón</li>
+                            <li>Polvorones de castaña</li>
+                        </ul>
+                    <p>¡Visítanos y descubre toda nuestra variedad!</p>     
+                </div> 
+                <img class="imgNavidad" src="./assets/imagenes/christmas.jpg" alt="imagen de navidad">    
+            </section>
+        </main>
+        <!--Aquí tenemos el footer con tres div diferenciados (para redes sociales, para la dirección y para el viso legal).
+        Decir que los tres son enlaces que nos direccionan los sitios webs o html correspondientes.-->
+        <footer>
+            <div class="redes_sociales">
+                <a href="#"><img src="assets/imagenes/facebook.png" alt="facebook" width="30" height="30"></a>
+                <a href="#"><img src="assets/imagenes/youtube.jpg" alt="youtube" width="30" height="30"></a>
+                <a href="#"><img src="assets/imagenes/instagram.png" alt="instagram" width="30" height="30"></a> 
+            </div>
+            <div class="direccion">
+                <a href="https://g.co/kgs/MUBWLH2">c/Virgen del Socorro, 123,<br> 12345, Alicante</a>
+            </div>
+            <div class="aviso_legal">
+                <a href="./views/avisoLegal.html">Aviso legal</a>
+            </div>
+        </footer>
+    </body>
+</html>
+

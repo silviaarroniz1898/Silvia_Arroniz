@@ -1,0 +1,295 @@
+/************************************************************/
+/*************ESTILOS QUE SE USAN EN TODOS LOS HTML***********/
+/*************************************************************/
+*{
+    margin:0;
+    padding: 0; 
+    color:#3f2607;
+}
+body{
+    background-color: #e4d9c5;
+
+}
+/*FUNTE QUE HEMOS OBTENIDO EN GOOGLES FONTS Y APLICAMOS A TODO EL HTML*/
+
+  .charm-regular {
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .charm-bold {
+    font-family: "Charm", cursive;
+    font-weight: 700;
+    font-style: normal;
+  }
+   
+
+
+/***********************************************************/
+/********ESTILOS DEL HEADER COMÚN EN TODOS LOS HTML*********/
+/***********************************************************/
+header{
+    text-align: center; 
+    height: 30%;
+    background-image: url(../assets/imagenes/fon_header.jpg);
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    background-color: none;
+    background-color: #e4d9c5;
+    
+}  
+header h1{   
+    font-size: 70px;
+    padding-top: 3%;
+    font-family: "Charm", cursive;
+    font-weight: 400;
+    font-style: normal; 
+}
+header h2{
+    padding-bottom: 3%;
+}
+
+/*DAMOS ESTILO A LA BARRA DE NAVEGACIÓN*/ 
+nav{
+    display: flex;
+    justify-content: space-around;
+    height: 40px;
+}
+.elemento{
+    padding: 14px;
+}
+.div_barra{
+    text-align: center;
+    text-decoration:none;
+    color:#3f2607;
+    padding: 3px;
+    border-radius: 8px;
+    border:3px solid white; 
+    background-color: #e4d9c5;
+}
+.div_barra2{
+    color:#e4d9c5;
+    background-color: #3f2607;
+    border:3px solid white; 
+    padding: 3px;
+    border-radius: 8px;
+}
+header a{
+    text-decoration:none;
+    font-weight: bold;   
+}
+header a:hover{
+    background-color:#e4d9c5;
+    padding: 7px;
+    border-radius: 8px;
+    transition: background-color 0.5s;
+}
+
+
+/************************************************************/
+/***************ESTILOS DEL MAIN DEL INDEX*******************/
+/************************************************************/
+
+ /*HEMOS HECHO TRES SECCIONES EN EL INDEX, CADA UNA DE ELLAS CON UN ID*/
+ main{
+    background-color: #e4d9c5;
+ }
+.historia{
+    padding:4%;
+    font-family:  "Charm", cursive;
+    height: 40%;
+    text-align: center;
+}
+.historia h1{
+    padding-bottom: 3px;
+    padding-left: 3%;
+    padding-top: 1%;
+}
+.historia p{
+    padding-left: 3%;
+    padding-top: 0.8%;
+    line-height: 150%;
+    font-size:x-large;
+    padding-right: 10%;   
+}
+
+/*AHORA VAMOS A ENCARGARNOS DE LAS DOS SECTION QUE QUEDAN: APARTADO1 Y APARTADO2*/
+.apartado1, .apartado2{
+    height: 30%;
+    display: flex;
+    padding: 10%;
+    padding-bottom: 3%;
+    font-size: larger;
+    line-height: 190%;
+}
+.apartado2{
+    flex-direction: row-reverse;
+}
+h2{
+    font-family:  "Charm", cursive;
+    padding-bottom: 2%; 
+}
+.imgSG{
+    padding-top: 5%;
+    border-radius: 50%;
+}
+
+.texNavidad,.texSG{
+    padding: 4%;
+    }
+.novedades li{
+        list-style-type: circle;
+        list-style-position: inside;
+    }
+a{
+        color:black;
+        font-weight: bold;
+        text-decoration: none;
+        }    
+
+
+
+/******************************************************************************/
+/******************DAMOS ESTILO AL MAIN DE PRODUCTOS.HTML***********************/
+/******************************************************************************/
+/*Hacemos una rejilla para colocar cada una de las imágenes de los productos de la empresa*/
+.mainproductos{
+    display: grid;
+    grid-template-columns: 250px 250px 250px;
+    grid-template-rows: 200px 200px;
+    grid-gap:50px;
+    justify-content: center;
+    margin: 50px auto;
+    
+}
+/*Le damos estilo a las imágenes y al texto de abajo, y con el último estilo hacemos que si se
+posiciona el ratón sobre la imagen, esta se desplace 5px hacia arriba*/
+.mainporductos img{
+    border-radius: 5px;
+}
+.mainproductos p{
+    text-align: center;
+    text-decoration: bold;
+} 
+.mainproductos div:hover{
+    transform: translateY(-5px);
+}
+/******************************************************************************/
+/******************DAMOS ESTILO AL MAIN DE CONTACTO.HTML***********************/
+/******************************************************************************/
+.maincontacto{
+    display:block;
+    padding: 4%;
+    text-align: center;
+}
+
+/******************************************************************************/
+/******************DAMOS ESTILO AL MAIN DE PRESUPUESTO.HTML*********************/
+/******************************************************************************/
+.mainpresupuesto{
+    padding: 4%;
+    display: block;
+    text-align: center;
+    font-size: large;
+    font-weight: 400;
+}
+/*Aquí le damos estilos a los elementos de la lista que componen nuestro formulario, exceptuando 
+la política de privacidad y el botón, que los he colocado fuera de la lista*/
+ul{
+    
+    max-width: 800px;
+    margin: 0 auto;
+}
+.flex-otler li{
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+}
+label{
+    padding: 8px;
+    font-weight: 300;
+    letter-spacing: 0.09em;
+}
+.flex-otler li > label{
+    flex: 1 0 120px;
+    max-width: 220px;
+}
+textarea{
+    width: 50%;
+}
+/*Este es el estilo correspondiente a la política de privacidad, que lo que hace es
+separarlo del resto del formulario*/
+.politica_privacidad{
+    padding-top: 5%;
+}
+/*Aquí tenemos el estilo del botón enviar*/
+.enviar{
+    color: #3f2607;
+    padding-top: 5% ;
+}
+/*Con este estilo le decimos que si se introducen valores no válidos, el texto salga en rojo*/
+input:invalid{
+    color:red;
+}
+/*******************************************************************
+****************DAMOS ESTILO AL FOOTER DEL INDEX********************
+*********************************************************************/
+/*En el footer del index tenemos tres partes: el enlace a redes sociales, la dirección
+y el enlace al aviso legal*/
+footer{
+    height: 5%;
+    display: flex;
+    align-items:center;
+    text-align:center;
+    margin-bottom: 0;
+    margin-top: 5%;
+   }
+.redes_sociales{
+    flex:33%;
+}
+footer img{
+    margin: 3px;
+}
+.direccion{
+    color: black;
+    text-decoration: none;
+    flex:33%;
+}
+.aviso_legal{
+    flex:33%;
+}
+.enlaceAL{
+    font-weight:400;
+    letter-spacing: 0.1rem;
+    font-size:large;
+}
+/*Con @media hacemos las modificaciones precisas para que la web sea responsive*/
+@media (max-width:1024px){
+    .historia p{
+        font-size: larger;
+    }
+    .apartado1, .apartado2{
+        display:block;
+        font-size: medium;
+        text-align: center;
+        margin:2%;
+    }
+    .imgNavidad{
+        clip-path:inset(20% 0% 40% 0%);
+        justify-self: center;
+    }
+    .texNavidad{
+        padding: 1%;
+    }
+    
+    .novedades li{
+        list-style-type: none;
+        list-style-position: inside;
+    }
+    .mainproductos{
+        display: grid;
+        grid-template-columns: 250px 250px;
+        grid-template-rows: 200px 200px 200px;
+    }
+}
